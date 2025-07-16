@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:now_tv/live_match_bottom_section.dart';
-import 'package:now_tv/live_match_buttons_section.dart';
-import 'package:now_tv/live_match_titles_section.dart';
+import 'package:now_tv/pages/live_match_bottom_button.dart';
+import 'package:now_tv/pages/live_match_middle_section.dart';
 import 'package:now_tv/utils/colors.dart';
 
-import '../live_match_top_section.dart';
+import '../widgets/live_match_bottom_section.dart';
+import '../widgets/live_match_top_section.dart';
 
 class LiveMatchDetailPage extends StatelessWidget {
   const LiveMatchDetailPage({super.key});
@@ -29,18 +29,9 @@ class LiveMatchDetailPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               LiveMatchTopSection(),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.w),
-                child: Column(
-                  spacing: 16.h,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    LiveMatchTitlesSection(),
-                    LiveMatchButtonsSection(),
-                    LiveMatchBottomSection(),
-                  ],
-                ),
-              ),
+              LiveMatchMiddleSection(),
+              LiveMatchBottomSection(),
+              LiveMatchBottomButton(),
             ],
           ),
         ),

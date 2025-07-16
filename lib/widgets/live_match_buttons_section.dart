@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:now_tv/now_icon_button.dart';
+
+import 'now_icon_button.dart';
 
 class LiveMatchButtonsSection extends StatelessWidget {
   const LiveMatchButtonsSection({

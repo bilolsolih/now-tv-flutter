@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:now_tv/live_match_stack_gradient.dart';
-import 'package:now_tv/live_match_stack_timer.dart';
+
+import 'live_match_stack_gradient.dart';
+import 'live_match_stack_timer.dart';
 
 class LiveMatchTopSection extends StatelessWidget {
   const LiveMatchTopSection({
